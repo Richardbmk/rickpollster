@@ -95,7 +95,7 @@ from decouple import config
 
 DATABASES = {
     'default' : dj_database_url.config(
-        default=config('CLEARDB_DATABASE_URL')
+        default=config('DATABASE_URL')
     )
 }
 #######################################
@@ -144,4 +144,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
