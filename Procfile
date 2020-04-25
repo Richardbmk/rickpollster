@@ -1,0 +1,1 @@
+web: gunicorn pollsterchart.wsgi --log-file -
