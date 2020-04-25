@@ -1,1 +1,1 @@
-web: gunicorn pollsterchart.wsgi --log-file -
+web: gunicorn pollsterchart.wsgi --log-file -git
